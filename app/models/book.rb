@@ -1,5 +1,6 @@
 class Book < ApplicationRecord
   belongs_to :user # commit 79b3044で修正済み
+  has_many :book_comments, dependent: :destroy
   has_many :favorites, dependent: :destroy
 
   validates :title,presence:true
