@@ -1,1 +1,9 @@
-@use "~bootstrap/scss/bootstrap"; 
+@use "~bootstrap/scss/bootstrap";
+
+
+.liked {
+  color: red;
+  & a {
+    color: red;
+  }
+}
